@@ -83,7 +83,9 @@ class MY_Controller extends MX_Controller {
 			$this->load->helper('language');
 
 			// redirect to Home page in default language
-			if ( empty($this->uri->segment(1)) )
+			$segment = $this->uri->segment(1);
+			//if ( empty($this->uri->segment(1)) )
+			if ( empty($segment))
 			{
 				$home_url = base_url($lang_config['default']).'/';
 				redirect($home_url);
