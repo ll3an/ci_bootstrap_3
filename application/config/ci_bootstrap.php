@@ -82,12 +82,12 @@ $config['ci_bootstrap'] = array(
 	'menu' => array(
 		'home' => array(
 			'name'		=> 'Home',
-			'url'		=> '',
+			'url'		=> 'http://localhost/ci-bootstrap',
 		),
 	),
 
 	// Login page
-	'login_url' => '',
+	'login_url' => 'http://localhost/ci-bootstrap/admin',
 
 	// Restricted pages
 	'page_auth' => array(
